@@ -1,0 +1,63 @@
+// about section
+header nav {
+    #about {
+        text-decoration: none;
+        background-color: #8d99ae;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+.hero-bg {
+    background: url('/image/about_bg.jpg') no-repeat center center/cover;
+    color: $text-color;
+    text-align: center;
+    padding: 100px 20px;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        background: $secondary-color;
+        color: $text-color;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+            background: $hover-color;
+        }
+    }
+}
+
+.card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+.content.about-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .content.about-content {
+    flex-direction: column;
+    align-items: center; /* optional: center cards */
+  }
+
+  .content.about-content .card {
+    width: 100%; /* make each card full width */
+    max-width: 400px; /* optional: limit size */
+  }
+}
