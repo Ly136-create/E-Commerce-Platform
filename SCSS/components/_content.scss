@@ -1,0 +1,23 @@
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+
+    .card {
+        background: $light-bg;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+
+    .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
