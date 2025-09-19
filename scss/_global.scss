@@ -8,7 +8,7 @@ body {
 /* Header */
 header {
     padding: 15px 30px;
-    background: #222;
+    background: $primary-color;
     // background: #027792;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@ header {
 }
 
 header {
-  background: $primary-color #027792;
+  // background: $primary-color ;
   // background-color: #027792;
   color: $text-color;
   padding: 15px 20px;
