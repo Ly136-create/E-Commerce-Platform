@@ -27,11 +27,12 @@ header nav {
 
 .products-header {
   text-align: center;
-  background: url("image/hero-product.png") no-repeat center center/cover;
+  // background: url("/Image/hero-product.png") no-repeat center center/cover;
+  background: #acb3ba;
   color: #fff; // make text visible on image
   padding: 80px 20px; // spacing for nicer look
   margin-bottom: 30px;
-  border-radius: 8px; // optional for smooth edges
+  // border-radius: 8px; // optional for smooth edges
 
   h2 {
     font-size: 32px;
