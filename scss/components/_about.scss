@@ -9,8 +9,9 @@ header nav {
 }
 
 .hero-bg {
-    background: url('https://i.pinimg.com/736x/65/ed/e2/65ede2c36a79d8157e4d02c5dd017091.jpg') no-repeat center center/cover;
-    color: $text-color;
+    // background: url('https://i.pinimg.com/736x/65/ed/e2/65ede2c36a79d8157e4d02c5dd017091.jpg') no-repeat center center/cover;
+    background: $light-bg;
+    color: $text-color black;
     text-align: center;
     padding: 100px 20px;
 
@@ -33,21 +34,7 @@ header nav {
     }
 }
 
-.card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
 
-        .card ul li {
-            margin-bottom: 8px;
-        }
-
-.content.about-content {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-}
 
 /* Responsive for mobile */
 @media (max-width: 768px) {

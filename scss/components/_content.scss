@@ -1,11 +1,14 @@
 /* Content Section */
 .content {
+    background: $light-bg;
+    gap: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 40px 20px;
 
     .card {
         background: $light-bg;
+        color: $text-color black;
         padding: 20px;
         border-radius: 10px;
         width: 30%;
@@ -21,5 +24,13 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }
+.card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
+        .card ul li {
+            margin-bottom: 8px;
+        }
 
