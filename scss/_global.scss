@@ -7,12 +7,12 @@ body {
 
 /* Header */
 header {
-    padding: 15px 30px;
-    background: $primary-color;
-    // background: #027792;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 15px 30px;
+  background: $primary-color;
+  // background: #027792;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header {
@@ -109,18 +109,12 @@ header nav a {
 
 /* Footer */
 footer {
-  background: $primary-color;
+  background: #333;
   color: $text-color;
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+  height: 20vh;
+  // padding: 20px;
 
   .social-icons {
     margin-top: 10px;
