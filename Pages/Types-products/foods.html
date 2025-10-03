@@ -15,7 +15,7 @@
         <h1><img src="/image/logo.png" alt=""></h1>
         <nav>
             <a href="/index.html">All Products</a>
-            <a href="#">Foods</a>
+            <a id="foods" href="#">Foods</a>
             <a href="/Pages/Types-products/dirnks.html">Drinks</a>
             <a href="/Pages/Types-products/electroices device.html">Electronics Device</a>
             <a href="/Pages/Types-products/musical instruments.html">Musical instrumentst</a>
@@ -28,7 +28,22 @@
                 <i class="fas fa-search"></i>
             </button>
         </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('header nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 
     <!-- product header -->
     <section class="products-header">
@@ -51,28 +66,32 @@
             <img src="/Products/foods/neangminh.png" alt="">
             <h3>Rice Neangminh</h3>
             <p class="price">$30.00</p>
-            <p class="desc">A traditional Cambodian rice variety known for its fragrant aroma and slightly sweet taste, often enjoyed during festivals and special meals.</p>
+            <p class="desc">A traditional Cambodian rice variety known for its fragrant aroma and slightly sweet taste,
+                often enjoyed during festivals and special meals.</p>
             <button>Add to Cart</button>
         </div>
         <div class="product-card">
             <img src="/Products/foods/noodles.png" alt="">
             <h3>Khmer Noodles</h3>
             <p class="price">$32.00</p>
-            <p class="desc">Authentic Cambodian noodles made from natural rice and local ingredients, offering a delicious flavor, easy to digest, and healthy.</p>
+            <p class="desc">Authentic Cambodian noodles made from natural rice and local ingredients, offering a
+                delicious flavor, easy to digest, and healthy.</p>
             <button>Add to Cart</button>
         </div>
         <div class="product-card">
             <img src="/Products/foods/noodle.png" alt="">
             <h3>Khmer Noodle</h3>
             <p class="price">$0.30</p>
-            <p class="desc">Authentic Cambodian noodles made from natural rice and local ingredients, offering a delicious flavor, easy to digest, and healthy.</p>
+            <p class="desc">Authentic Cambodian noodles made from natural rice and local ingredients, offering a
+                delicious flavor, easy to digest, and healthy.</p>
             <button>Add to Cart</button>
         </div>
         <div class="product-card">
             <img src="/Products/foods/phka khnhei.png" alt="">
             <h3>Rice Phka Khnhei</h3>
             <p class="price">$25.00</p>
-            <p class="desc">A premium rice variety with a fresh white color and a unique ginger-flower aroma, giving a refreshing taste and high market value.</p>
+            <p class="desc">A premium rice variety with a fresh white color and a unique ginger-flower aroma, giving a
+                refreshing taste and high market value.</p>
             <button>Add to Cart</button>
         </div>
     </section>

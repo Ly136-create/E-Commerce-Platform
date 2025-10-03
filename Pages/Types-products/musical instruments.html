@@ -18,7 +18,7 @@
             <a href="/Pages/Types-products/foods.html">Foods</a>
             <a href="/Pages/Types-products/dirnks.html">Drinks</a>
             <a href="/Pages/Types-products/electroices device.html">Electronics Device</a>
-            <a href="#">Musical instrumentst</a>
+            <a id="musical" href="#">Musical instrumentst</a>
         </nav>
 
         <!-- Search Bar moved inside header -->
@@ -28,7 +28,22 @@
                 <i class="fas fa-search"></i>
             </button>
         </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('header nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 
     <!-- product header -->
     <section class="products-header">
@@ -40,17 +55,7 @@
     <!-- Product Grid -->
     <section class="products-container">
         <div class="product-card">
-            <img src="/Products/music/guitar.png" alt="Coca Cola">
-            <h3>Guitar</h3>
-            <p class="price">$35.00</p>
-            <p class="desc">A versatile musical instrument with six strings, perfect for creating melodies, rhythms, and
-                harmonies across many genres.
-            </p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="/Products/music/piano yamaha.png" alt="Coca Cola">
+            <img src="/Products/music/piano yamaha.png" alt="">
             <h3>Piano Yamaha</h3>
             <p class="price">$990.00</p>
             <p class="desc">A high-quality musical instrument known for its rich sound, durability, and elegant design —
@@ -60,7 +65,27 @@
         </div>
 
         <div class="product-card">
-            <img src="/Products/music/guitar bass.png" alt="Coca Cola">
+            <img src="/Products/music/guitar.png" alt="">
+            <h3>Guitar</h3>
+            <p class="price">$35.00</p>
+            <p class="desc">A versatile musical instrument with six strings, perfect for creating melodies, rhythms, and
+                harmonies across many genres.
+            </p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/Products/music/piano yamaha.png" alt="">
+            <h3>Piano Yamaha</h3>
+            <p class="price">$990.00</p>
+            <p class="desc">A high-quality musical instrument known for its rich sound, durability, and elegant design —
+                perfect for both beginners and professionals.
+            </p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/Products/music/guitar bass.png" alt="">
             <h3>Bass Guitar</h3>
             <p class="price">$120.00</p>
             <p class="desc">A string instrument that provides deep, rich, and rhythmic tones, forming the backbone of
@@ -71,7 +96,18 @@
         </div>
 
         <div class="product-card">
-            <img src="/Products/music/guitar solo.png" alt="Coca Cola">
+            <img src="/Products/music/cello.png" alt="">
+            <h3>Cello</h3>
+            <p class="price">$200.00</p>
+            <p class="desc">A large, four-stringed instrument with a deep, rich tone, often played sitting down and
+                essential
+                in orchestras and chamber music.
+            </p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/Products/music/guitar solo.png" alt="">
             <h3>Guitar Solo</h3>
             <p class="price">$190.00</p>
             <p class="desc">A musical performance featuring the guitar as the lead instrument, showcasing expressive
@@ -82,7 +118,7 @@
         </div>
 
         <div class="product-card">
-            <img src="/Products/music/violin.png" alt="Coca Cola">
+            <img src="/Products/music/violin.png" alt="">
             <h3>Violin</h3>
             <p class="price">$150.00</p>
             <p class="desc">A four-stringed instrument known for its bright, expressive sound, widely used in classical,
@@ -93,7 +129,7 @@
         </div>
 
         <div class="product-card">
-            <img src="/Products/music/cello.png" alt="Coca Cola">
+            <img src="/Products/music/cello.png" alt="">
             <h3>Cello</h3>
             <p class="price">$200.00</p>
             <p class="desc">A large, four-stringed instrument with a deep, rich tone, often played sitting down and

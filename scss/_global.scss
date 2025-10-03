@@ -88,11 +88,12 @@ header nav a {
 @media (max-width: 768px) {
   header nav {
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: -100%;
     flex-direction: column;
     width: 100%;
     background-color: $nav-bg;
+    color: #000;
     transition: 0.3s;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

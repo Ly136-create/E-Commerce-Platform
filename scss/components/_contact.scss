@@ -1,12 +1,13 @@
 // contact us
 header nav {
-    #contact {
-        text-decoration: none;
-        background-color: #8d99ae;
-        border-radius: 5px;
-        padding: 10px;
-    }
+  #contact {
+    text-decoration: none;
+    background-color: #8d99ae;
+    border-radius: 5px;
+    padding: 10px;
+  }
 }
+
 .contact-section {
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,8 @@ header nav {
   padding: 50px;
   background: #e6f0fa;
   // border-radius: 12px;
-  flex-wrap: wrap; /* responsive */
+  flex-wrap: wrap;
+  /* responsive */
   margin-bottom: 0;
 }
 
@@ -25,8 +27,9 @@ header nav {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 20px; /* spacing for mobile */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  /* spacing for mobile */
 }
 
 .contact-form h2 {
@@ -87,4 +90,51 @@ button:hover {
 .contact-image img {
   max-width: 60%;
   height: auto;
+}
+
+/* Responsive: Mobile */
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header-nav nav {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background-color: $nav-bg;
+    // color: #000;
+    transition: 0.3s;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  header nav a{
+    color: #000;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .contact-section {
+    height: 150vh;
+  }
+
+  .contact-section {
+    width: 125%;
+    padding: 10px;
+  }
+
+  .contact-form {
+    margin: 30px;
+
+  }
+
+  .contact-image {
+    display: none;
+  }
+
 }

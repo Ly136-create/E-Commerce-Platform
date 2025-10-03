@@ -16,7 +16,7 @@
         <nav>
             <a href="/index.html">All Products</a>
             <a href="/Pages/Types-products/foods.html">Foods</a>
-            <a href="#">Drinks</a>
+            <a id="drinks" href="#">Drinks</a>
             <a href="/Pages/Types-products/electroices device.html">Electronics Device</a>
             <a href="/Pages/Types-products/musical instruments.html">Musical instrumentst</a>
         </nav>
@@ -28,7 +28,23 @@
                 <i class="fas fa-search"></i>
             </button>
         </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('header nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
 
     <!-- product header -->
     <section class="products-header">
