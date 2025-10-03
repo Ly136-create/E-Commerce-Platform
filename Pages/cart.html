@@ -4,70 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <style>
-        /* cart items  */
-        .cart-page{
-            margin: 80px auto;
-
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .cart-info{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        th{
-            text-align: left;
-            padding: 5px;
-            color: #fff;
-            background: #ff523b;
-            font-weight: normal;
-        }
-        td{
-            padding: 10px 5px; 
-        }
-        td input{
-            width: 40px;
-            height: 30px;
-            padding: 5px;
-
-        }
-        td a{
-            color: #ff523b;
-            font-size: 12px;
-        }
-        td img{
-            width: 120px;
-            height: 80px;
-            padding: 15px 5px;
-        }
-
-        .total-price{
-            display: flex;
-            justify-content: flex-end;
-        }
-        .total-price table {
-            border-top: 3px solid #ff523b;
-            width: 100%;
-            max-width: 530px;
-
-        }
-        td:last-child{
-            text-align: right;
-        }
-        th:last-child{
-            text-align: right;
-        }
-    </style>
+    <title>Product Cart</title>
+    <link rel="stylesheet" href="/dist/css/index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header-products">
+        <h1><img src="/image/logo.png" alt=""></h1>
+        <nav class="products">
+            <a href="#">All Products</a>
+            <a href="/Pages/Types-products/foods.html">Foods</a>
+            <a href="/Pages/Types-products/dirnks.html">Drinks</a>
+            <!-- <a href="#">Books</a> -->
+            <a href="#">Electronics Device</a>
+            <a href="/Pages/Types-products/musical instruments.html">Musical instrumentst</a>
+        </nav>
+
+        <!-- Search Bar moved inside header -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProduct()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
     <!-- cart items details -->
-     <div class="small-caontainer cart-page">
+    <div class="small-caontainer cart-page">
 
         <table>
             <tr>
@@ -78,10 +42,10 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="/Products/Computers/lenovo desktop.png" 
-                        >
+                        <img src="/Products/Computers/lenovo desktop.png">
                         <div>
                             <p>Laptop Lenovo</p>
+                            <p>Intel® Core™ i5, 8GB RAM</p>
                             <small>Price: $350.00</small>
                             <br>
                             <a href="">Remove</a>
@@ -96,11 +60,11 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="/Products/Computers/acer laptop.png" 
-                        >
+                        <img src="/Products/Computers/acer laptop.png">
                         <div>
                             <p>Laptop Lenovo</p>
-                            <small>Price: $350.00</small>
+                            <p>Intel® Core™ i5, 16GB RAM</p>
+                            <small>Price: $290.00</small>
                             <br>
                             <a href="">Remove</a>
                         </div>
@@ -108,17 +72,17 @@
 
                 </td>
                 <td><input type="number" value="1"></td>
-                <td>$350.00</td>
+                <td>$290.00</td>
             </tr>
 
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="/Products/Computers/hp desktop.png" 
-                        >
+                        <img src="/Products/Computers/hp desktop.png">
                         <div>
                             <p>Laptop Lenovo</p>
-                            <small>Price: $350.00</small>
+                            <p>Intel® Core™ i5, 8GB RAM, and SSD storage</p>
+                            <small>Price: $370.00</small>
                             <br>
                             <a href="">Remove</a>
                         </div>
@@ -126,7 +90,7 @@
 
                 </td>
                 <td><input type="number" value="1"></td>
-                <td>$350.00</td>
+                <td>$370.00</td>
             </tr>
 
         </table>
@@ -135,19 +99,54 @@
             <table>
                 <tr>
                     <td>Subtotal</td>
-                    <td>$350.00</td>
+                    <td>$1010.00</td>
                 </tr>
                 <tr>
                     <td>Tax</td>
-                    <td>$25.00</td>
+                    <td>$50.00</td>
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td>$375.00</td>
+                    <td>$1060.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="payment">Payment</button></td>
                 </tr>
             </table>
         </div>
-     </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-products">
+        <!-- information -->
+        <div class="info">
+            <span>Information</span>
+            <a href="/Pages/home.html">Home</a>
+            <a href="/Pages/about.html">About</a>
+            <a href="/Pages/services.html">Services</a>
+            <a href="/Pages/contact.html">Contact</a>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <span>Categories</span>
+            <a href="/Pages/Types-products/foods.html">Foods</a>
+            <a href="/Pages/Types-products/dirnks.html">Drinks</a>
+            <a href="/Pages/Types-products/electroices device.html">Electronics Device</a>
+            <a href="/Pages/Types-products/musical instruments.html">Musical instrumentst</a>
+        </div>
+
+        <div class="social-media">
+            <p>E-Commerce for sellers and buyers |<br> Contact: ley928445@gmail.com</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/results?search_query=mr.lyjrai" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/foryou?lang=en-GB" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
