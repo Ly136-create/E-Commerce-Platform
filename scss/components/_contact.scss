@@ -96,21 +96,25 @@ button:hover {
 .contact-section {
   height: 130vh;
 }
+
 .contact-form {
   margin-left: 0;
   max-width: 100%;
   margin-bottom: 20px;
   padding: 20px;
 }
+
 .contact-image {
   display: none;
 }
+
 // }        
 @media (max-width: 500px) {
   .contact-section {
     height: 150vh;
   }
-}  
+}
+
 // Media
 @media (max-width: 768px) {
   .contact-section {
@@ -146,5 +150,48 @@ button:hover {
 
   .contact-image {
     display: none;
+  }
+}
+
+// media (max-width: 390px)
+@media (max-width: 390px) {
+  .contact-section {
+    height: 160vh;
+    padding: 15px;
+  }
+
+  .contact-form {
+    margin-left: 0;
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  .contact-image {
+    display: none;
+  }
+}
+
+// media (max-width: 320px)
+@media (max-width: 320px) {
+  .contact-section {
+    height: 170vh;
+    padding: 10px;
+  }
+
+  .contact-form {
+    margin-left: 0;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .contact-image {
+    display: none;
+  }
+
+  .input-box input,
+  .input-box textarea {
+    width: 90%;
   }
 }
