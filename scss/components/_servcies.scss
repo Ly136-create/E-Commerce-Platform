@@ -80,4 +80,35 @@ header nav a {
     .services-list {
         grid-template-columns: 1fr;
     }
+    .services-image {
+        margin-top: 20px;
+    }   
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        height: auto;
+    }
+    .info,
+    .categories {
+        align-items: center;
+    }
 }
+@media (max-width: 320px) {
+    .services-section {
+        padding: 40px 5%;
+    }
+
+    .services-text h2 {
+        font-size: 1.5rem;
+    }
+   
+    .service-item i {
+        font-size: 30px;
+    }
+
+    .services-image {
+        margin-top: 20px;
+    }
+}   
