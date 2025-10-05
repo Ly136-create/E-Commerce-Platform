@@ -131,9 +131,8 @@ header nav {
 
 
 // media (max-width: 768px)
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 832px) {
   .search-bar {
-    margin-right: 0;
     margin-bottom: 20px;
   }
 
@@ -160,15 +159,16 @@ header nav {
   } 
 
   @media (max-width: 428px) {
+    .header{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+    }
     .search-bar {
-      margin-right: 0;
       margin-bottom: 20px;
     }
-    .search-bar input {
-      width: 150px;
-      
-    }
-  }
+ 
   .footer-products {
     flex-direction: column;
     align-items: center;
@@ -193,5 +193,12 @@ header nav {
 @media (max-width: 1200px) {
   .product-card img {
     height: 200px;
+  } 
+}
+// Media (max-width: 992px)
+@media (max-width: 992px) {
+  .product-card img {
+    height: 180px;
   }
+}
 }
