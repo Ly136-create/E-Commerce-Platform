@@ -129,7 +129,7 @@ header nav {
   flex-direction: column;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   // .search-bar input {
   //   width: 200px;
   // }
@@ -142,7 +142,7 @@ header nav {
   }
 
   .footer-products {
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
